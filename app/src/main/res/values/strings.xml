@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PM-Kotlin</string>
+    <string name="IntroNombre">Introdusca su nombre</string>
+    <string name="IntroApellido">Introdusca su Apellido</string>
+    <string name="IntroCorreo">Introdusca su Correo</string>
+    <string name="IntroEdad">Introdusca su Edad</string>
+    <string name="Formulario">Formulario</string>
+</resources>
