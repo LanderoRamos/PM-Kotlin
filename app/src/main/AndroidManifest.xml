@@ -13,10 +13,27 @@
         android:theme="@style/Theme.PMKotlin"
         tools:targetApi="31">
         <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".Ope1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".OperacionesActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".OperacionesActivity"
+            android:exported="false" />
+        <activity
             android:name=".item_persona"
             android:exported="false" />
         <activity
             android:name=".ActivityList"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".ActivityFormulario"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,11 +41,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".ActivityFormulario"
-            android:exported="true">
 
-        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true" />

@@ -1,6 +1,8 @@
 package com.example.pm_kotlin
 
 import Configuracion.SqliteConexion
+import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -20,6 +22,7 @@ class ActivityFormulario : AppCompatActivity() {
 
     lateinit var personasql: SqliteConexion
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -37,6 +40,8 @@ class ActivityFormulario : AppCompatActivity() {
         val correo = findViewById<EditText>(R.id.correo)
         val edad = findViewById<EditText>(R.id.edad)
         val btnagregar = findViewById<Button>(R.id.btnIngresar)
+        val btnver = findViewById<Button>(R.id.btnverF)
+        val btnopera = findViewById<Button>(R.id.btnopera)
 
         btnagregar.setOnClickListener {
             //Toast.makeText(this, ""+nombre.text+" "+apellido.text, Toast.LENGTH_LONG).show()
@@ -50,6 +55,17 @@ class ActivityFormulario : AppCompatActivity() {
                 Toast.makeText(this, "No se ha guardado", Toast.LENGTH_LONG).show()
             }
         }
+
+        btnver.setOnClickListener {
+            val intent = Intent(this, ActivityList::class.java)
+            startActivity(intent)
+        }
+
+        btnopera.setOnClickListener {
+            val intent = Intent(this, Ope1Activity::class.java)
+            startActivity(intent)
+        }
+
     }
 
 }

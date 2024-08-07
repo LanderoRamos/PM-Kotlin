@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OperacionesActivity">
+
+    <EditText
+        android:id="@+id/editTextN1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Primer Numero"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTextN2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Segundo Numero"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnsuma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sumar" />
+
+    <Button
+        android:id="@+id/btnresta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Restar" />
+
+    <Button
+        android:id="@+id/btnmulti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Multiplicar" />
+
+    <Button
+        android:id="@+id/btndiv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dividir" />
+</LinearLayout>
